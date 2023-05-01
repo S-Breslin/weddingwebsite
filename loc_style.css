@@ -1,0 +1,228 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    vertical-align: baseline;
+    width: 100vw;
+    background-color: #A8B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 15vh;
+    background-color: #85948D;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-bottom: 3px solid white;
+}
+
+.logo{
+    display: flex;
+    border-radius: 40%;
+    border: 10px solid #697261;    
+    height: 25vh;
+    margin-top: 15vh;
+    margin-bottom: 20px;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    color: white;font-family: 'Roboto Serif', serif;
+    font-size: 22px;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav1, .nav2 {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;    
+    list-style: none;
+    width: 80%;
+}
+
+ul, li {
+    margin-left: -20px;
+}
+
+.banner {
+    height: 400px;
+    background-image: url(./images/ferragudo_banner.jpg);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-bottom: 3px white solid;
+}
+
+.container {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.getting {
+    background-image: url(./images/plane.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.where {
+    background-image: url(./images/ferragudo2.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #3E3D38;
+}
+
+.things {
+    background-image: url(./images/caves.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.getting, .where, .things {
+    width: 20%;
+    height: 70%;
+    border-radius: 1%;
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    border: white 2px solid;
+
+}
+
+.getting:hover {
+    border: 4px white solid;
+    cursor: pointer;
+}
+.band {
+    background-color: #3E3D38;
+    width: 100%;
+    text-align: center;
+    opacity: 80%;
+}
+
+h2 {
+    opacity: 100%;
+}
+
+.sect_title {
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+
+.get_there {
+    height: 100vh;
+    background-color: #697261;
+}
+
+
+
+.get_content {    
+    height: 70%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5%;
+}
+
+.get_text {
+    width: 33%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.by_plane, .transfers {
+    width: 90%;
+    background-color: #85948D;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: #3E3D38;
+    border: 1px white solid;
+}
+
+.map {
+    width:33%;
+    border-radius: 1rem;    
+    border: 2px white solid;
+}
+
+.where_stay {
+    height:100vh;
+    background-color: #85948D;
+}
+.where_head {
+    display: flex;
+    justify-content: center;
+}
+
+.where_container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.albuf, .other {
+    height: 80%;
+    width: 25%;
+    background-color: #697261;
+    display: flex;
+    justify-content: center;
+    border: 2px white solid;
+    border-radius: 1rem;
+
+}
+
+.ferra {  
+    height: 95%;
+    width: 30%;
+    background-color: #A8B0A3;
+    display: flex;
+    justify-content: center;
+    border: 2px white solid;
+    border-radius: 1rem;
+}
+
+
+.where_t2 {
+    color: white;    
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.5rem;
+
+}
+
+.where_t1 {
+    color: white;    
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.75rem;
+}

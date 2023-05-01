@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    vertical-align: baseline;
+    width: 100vw;
+    background-color: #A8B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color:  white;
+}
+
+header {
+    height: 15vh;
+    background-color: #85948D;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-bottom: 3px solid white;
+}
+
+.logo{
+    display: flex;
+    border-radius: 40%;
+    border: 10px solid #697261;    
+    height: 25vh;
+    margin-top: 15vh;
+    margin-bottom: 20px;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    color: white;font-family: 'Roboto Serif', serif;
+    font-size: 22px;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav1, .nav2 {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;    
+    list-style: none;
+    width: 80%;
+}
+
+ul, li {
+    margin-left: -20px;
+}
+
+.banner {
+    height: 400px;
+    background-image: url(./images/banner4.jpg);
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-bottom: 3px white solid;
+}
+
+.container {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.location {
+    background-image: url(./images/ferragudo.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.wedding {
+    background-image: url(./images/Lady_of_the_Rock.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #3E3D38;
+}
+
+.day2 {
+    background-image: url(./images/nosoloaqua.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rsvp {
+    background-image: url(./images/rsvp.jpeg);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.location, .wedding, .day2, .rsvp {
+    width: 20%;
+    height: 70%;
+    border-radius: 1%;
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    border: 3px white solid;
+
+}
+.band {
+    background-color: #3E3D38;
+    width: 100%;
+    text-align: center;
+    opacity: 80%;
+}
+
+h2 {
+    opacity: 100%;
+}

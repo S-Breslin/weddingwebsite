@@ -107,11 +107,12 @@ ul, li {
     display: flex;
     align-items: flex-end;
     color: white;
-    border: white 2px solid;
+    border: white 2px solid;    
+    border-radius: 0.25rem;
 
 }
 
-.getting:hover {
+.getting:hover, .where:hover, .things:hover  {
     border: 4px white solid;
     cursor: pointer;
 }
@@ -139,38 +140,55 @@ h2 {
     background-color: #697261;
 }
 
-
+.linkSpanner{
+    position:absolute; 
+    width:30%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    border: 1px red solid;
+  
+    /* edit: fixes overlap error in IE7/8, 
+       make sure you have an empty gif 
+    background-image: url('empty.gif');*/
+  }   
 
 .get_content {    
     height: 70%;
     width: 80%;
     margin-left: 10%;
-    display: flex;    
-    justify-content: space-around;
+    display: flex; 
+    flex-direction: column;   
+    justify-content: space-between;
     align-items: center;
-    margin-top: 2.5%;
+    margin-top: 1%;
+    border-radius: 1rem;
+    background-image: url(./images/packbags.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .get_text {
-    width: 33%;
+    width: 60%;
     height: 60%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .by_plane, .transfers {
-    width: 90%;
-    background-color: #85948D;
+    width: 35%;
+    color: white;
     padding: 2rem;
     border-radius: 0.5rem;
-    color: #3E3D38;
     border: 1px white solid;
+    text-align: center;
+    background-color: #85948D;
+    opacity: 90%;
 }
 
 .map {
-    width:33%;
     border-radius: 1rem;    
     border: 2px white solid;
 }

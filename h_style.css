@@ -98,7 +98,7 @@ ul, li {
     background-repeat: no-repeat;
 }
 
-.rsvp {
+.rsvp_box {
     background-image: url(./images/rsvp.jpeg);
     background-size:cover;
     background-position: top;
@@ -106,18 +106,23 @@ ul, li {
     color: white;
 }
 
-.location, .wedding, .day2, .rsvp {
+.location, .wedding, .day2, .rsvp_box {
     width: 20%;
     height: 70%;
-    border-radius: 1%;
+    border-radius: 0.25rem;
     color: white;
     font-family: 'Roboto Serif', serif;
     display: flex;
     align-items: flex-end;
     color: white;
-    border: 3px white solid;
-
+    border: 2px white solid;
 }
+
+.location:hover, .wedding:hover, .day2:hover, .rsvp_box:hover {
+    border: 4px white solid;
+    cursor: pointer;
+}
+
 .band {
     background-color: #3E3D38;
     width: 100%;
@@ -127,4 +132,54 @@ ul, li {
 
 h2 {
     opacity: 100%;
+}
+
+.rsvp {
+    height: 100vh;
+    background-color: #85948D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rsvp h1 {
+    color: white;
+    font-size: 3rem;    
+    font-family: 'Roboto Serif', serif;
+}
+
+.rsvp_form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(./images/Lady_of_the_Rock.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+    margin-bottom: 2.5%;
+}
+
+.rsvp_form_content {
+    height: 45%;
+    width: 25%;
+    background-color: #85948D;
+    border: 3px white solid;
+    opacity: 80%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2.5%;
+
+}
+input {
+    opacity: 100%;
+}
+
+legend, label {
+    color: white;
 }

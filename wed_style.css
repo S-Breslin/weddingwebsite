@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    vertical-align: baseline;
+    width: 100vw;
+    background-color: #A8B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color:  white;
+}
+
+header {
+    height: 15vh;
+    background-color: #85948D;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-bottom: 3px solid white;
+}
+
+.logo{
+    display: flex;
+    border-radius: 40%;
+    border: 10px solid #697261;    
+    height: 25vh;
+    margin-top: 15vh;
+    margin-bottom: 20px;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    font-size: 22px;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav1, .nav2 {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;    
+    list-style: none;
+    width: 80%;
+}
+
+ul, li {
+    margin-left: -20px;
+}
+
+.content {
+    width: 100vw;
+    height: 200vh;
+    background-image: url(./images/Lady_of_the_Rock.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.material-symbols-rounded {
+    color: red;
+    border: 1px blue solid;
+    margin-bottom: 120vh;
+    width: 25%;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.text {
+    color: #85948D;
+    background-color: white;
+    opacity: 90%;
+    width: 35%;
+    height: 33%;
+    padding: 2rem 4rem 4rem 4rem;
+    text-align: center;
+    border: 0.25rem solid #85948D;
+    border-radius: 2rem;    
+    font-family: 'Roboto Serif', serif;
+    margin-top: -5%;
+    margin-bottom: 10%;
+}
+
+.text h2, h1 {
+    text-decoration: underline;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+}
+.date {
+    font-weight: bolder;
+    font-size: 1rem;
+}

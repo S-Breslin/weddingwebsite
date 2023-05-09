@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    vertical-align: baseline;
+    width: 100vw;
+    background-color: #A8B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 15vh;
+    background-color: #85948D;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-bottom: 3px solid white;
+}
+
+.logo{
+    display: flex;
+    border-radius: 40%;
+    border: 10px solid #697261;    
+    height: 25vh;
+    margin-top: 15vh;
+    margin-bottom: 20px;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    color: white;font-family: 'Roboto Serif', serif;
+    font-size: 22px;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav1, .nav2 {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;    
+    list-style: none;
+    width: 80%;
+}
+
+ul, li {
+    margin-left: -20px;
+}
+
+.main {
+    height: 84.7vh;
+    width: 100vw;
+    background-image: url(./images/dayTwo.jpg);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+    height: 10%;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Roboto Serif', serif;
+}

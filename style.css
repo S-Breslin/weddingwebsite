@@ -3,15 +3,15 @@ html, body {
     padding: 0;
     border: 0; 
     vertical-align: baseline;
-    width: 100vw;
-    background-color: #A8B0A3;
+    width: 100vw; background: rgb(168,176,163);
+    background: radial-gradient(circle, rgba(168,176,163,1) 54%, rgba(105,114,97,1) 100%); 
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
 }
 
 .background {
@@ -19,11 +19,25 @@ html, body {
     flex-direction: column;   
     border-radius: 2.5%;
     height: 90vh;
-    width: 33%;
+    width: 100%;
+    margin-top: 5vh;
+    min-width: 800px;
+}
+
+#blur {    
+    grid-column: 2;
+    grid-row: 1;
     background-image: url(./images/The_Happy_Couple_Blur.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 2.5%;
+}
+
+#clear {    
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url(./images/The_Happy_Couple.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .content{

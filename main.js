@@ -2,11 +2,16 @@ let logButton = document.getElementById("login");
 let imgContainer = document.getElementById("background");
 let content = document.getElementById("content");
 
-let showImage = () => {
-    imgContainer.style.backgroundImage = "url(./images/The_Happy_Couple.jpg)";
-    content.style.visibility = "hidden";
 
+
+let showImage = () => {
+    content.style.visibility = "hidden";
+    gsap.to("#blur", {
+        opacity: 0,
+        duration: 5, ease: "slow(0.3, 2)"
+    });
 }
+
 
 logButton.onclick = showImage;
 

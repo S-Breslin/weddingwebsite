@@ -40,6 +40,12 @@ nav {
     font-size: 22px;
 }
 
+@media only screen and (max-width: 1200px)  { 
+    nav {
+        visibility: hidden;
+    }
+}
+
 li:hover {
     font-weight: bold;
     cursor: pointer;
@@ -59,7 +65,7 @@ ul, li {
 
 .content {
     width: 100vw;
-    height: 200vh;
+    height: 200svh;
     background-image: url(./images/Lady_of_the_Rock.jpg);
     background-position: top;
     background-repeat: no-repeat;
@@ -81,23 +87,44 @@ ul, li {
 }
 .text {
     color: #85948D;
-    background-color: white;
-    opacity: 90%;
-    width: 35%;
-    height: 33%;
+    background-color: rgb(255, 255, 255, 0.9);
+    max-width: 35%;
+    max-height: 600px;
     padding: 2rem 4rem 4rem 4rem;
     text-align: center;
     border: 0.25rem solid #85948D;
     border-radius: 2rem;    
     font-family: 'Roboto Serif', serif;
-    margin-top: -5%;
+    margin-top: -15%;
     margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 1584px)  { 
+    .text {
+        overflow-y: scroll;
+        scrollbar-color:  rgba(133, 148, 141, 0) rgba(133, 148, 141, 0);
+        scrollbar-width: thin;
+    }
+}
+
+@media only screen and (max-width: 400px)  { 
+    .content {
+        height: 80vh;
+        align-items: center;
+        padding-top: 20vh;
+    }
+    .text {
+        height: 30vh;
+    }
+    .logo {
+        height: 15vh;
+    }
 }
 
 .text h2, h1 {
     text-decoration: underline;
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
+    font-size: 2em;
     letter-spacing: 0.25rem;
 }
 .date {

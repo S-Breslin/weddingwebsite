@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    vertical-align: baseline;
+    width: 100vw;
+    background: rgb(168,176,163);
+    background: radial-gradient(circle, rgba(168,176,163,1) 54%, rgba(105,114,97,1) 100%); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 15vh;
+    background-color: #85948D;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-bottom: 3px solid white;
+}
+
+.logo{
+    display: flex;
+    border-radius: 40%;
+    border: 10px solid #697261;    
+    height: 25vh;
+    margin-top: 15vh;
+    margin-bottom: 20px;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    font-size: 22px;
+}
+
+a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav1, .nav2 {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;    
+    list-style: none;
+    width: 80%;
+}
+
+ul, li {
+    margin-left: -20px;
+}
+
+.main {
+    width: 100vw;
+    margin-top: 6%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto Serif', serif;
+
+}
+
+h1 {
+    text-decoration: underline;
+    font-size:  2rem;
+}
+
+.faq_text {
+    width: 66%;
+    
+}
+
+.faq_text li {
+    margin-bottom: 3rem;
+    border-bottom: 1px white solid;
+}

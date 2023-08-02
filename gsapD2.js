@@ -1,0 +1,1 @@
+gsap.to("#type", {text: "Coming Soon...", ease:"none", duration: 2.5});

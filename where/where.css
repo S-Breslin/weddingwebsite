@@ -191,8 +191,8 @@ a{
 
 .text_box {
     background-color:  rgba(62, 61, 56, 0.75);
-    margin-top: 2vh;
-    height: 60vh;
+    margin-top: 2dvh;
+    height: 60dvh;
     border-radius: 1rem;
     padding: 2.5rem 0rem 2.5rem 4rem;
     display: flex;

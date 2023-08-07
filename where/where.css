@@ -225,62 +225,22 @@ a{
 #right h3 {
     text-decoration: underline;
 }
-@media only screen and (max-width: 500px)  { 
-    .where_page h2 {
-        font-size: 3rem;
-    }
-    .container {
-        flex-direction: column;
-        align-items: center;
-        height: 70%;
-        width: 100vw;
-    }
-    .text_box{
-        height: 30vh;
-        padding: 1.5rem 10rem 1rem 2rem;
-    }
-    #left {
-        padding-right: 0rem;
-        margin-right: 0rem;
-        width: 65vw;
-    }
-    #left_text {
-        padding-right: 2rem;
-        scrollbar-face-color: #fff;
-    }
-    
-    #couple {
-        max-width: 35vw;
-    }
 
-    #right_box {
-        width: 65vw;
-        padding-right: 0rem;
-    
-    }
-    
-    #right {
-        width: 55vw;
-        padding-right: 0;
-        overflow-x: hidden;
-        scrollbar-face-color: #fff;
-    }
-    
-}
-#albufeira {
-    background-image: url(albuferia1.jpg);
+#praia {
+    background-image: url(./praia-da-rocha-beach-summer.jpg);
     background-size: cover;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
-#a_cont {
+#p_cont {
     padding: 2.5rem 0rem 2.5rem 4rem;    
-    height: 20vh;
+    height: 50dvh;
 }
 
-#a_text {
+#p_text {
     overflow-y: scroll;
-    width: 40vw;
+    width: 50vw;
     padding-right: 4rem;
 
 }
@@ -308,7 +268,7 @@ a{
 
 #o_cont{
     padding: 2.5rem 0rem 2.5rem 4rem;    
-    height: 50vh;
+    height: 25vh;
 }
 
 #o_text {
@@ -322,4 +282,79 @@ a{
 
 #par {
     width: 40vw;
+}
+
+@media only screen and (max-width: 500px)  { 
+    .where_page h2 {
+        font-size: 2.75em;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 100vw;
+    }
+    .text_box{
+        height: 30vh;
+        padding: 1.5rem 0rem 1rem 2rem;
+    }
+    #left {
+        padding-right: 0rem;
+        margin-right: 0rem;
+        width: 65vw;
+    }
+    #left_text {
+        padding-right: 2rem;
+        scrollbar-face-color: #fff;
+    }
+    
+    #couple {
+        max-width: 35vw;
+    }
+
+    #right_box {
+        width: 65vw;
+        padding-right: 0rem;
+    
+    }
+    
+    #right {
+        width: 55vw;
+        padding-right: 0;
+        overflow-x: hidden;
+        scrollbar-face-color: #fff;
+    }
+
+    .boat {
+        max-width: 50vw;
+    
+    }
+    
+    #boats {
+        flex-direction: column;
+    }
+
+    #boat1 {
+        margin-bottom: 1rem;
+        width: 50vw;
+    }
+    
+    #p_cont {
+        padding: 1.5rem 0rem 1.5rem 2rem;    
+        height: 50dvh;
+    }
+
+    #p_text {
+        padding-right: 2rem;
+    
+    }
+    #o_cont{
+        padding: 1.5rem 0rem 1.5rem 2rem;
+        height: 50dvh;
+    }
+    
+    #o_text {
+        padding-right: 2rem;
+        width: 50vw;
+    }
 }

@@ -16,6 +16,7 @@ a{
 
 #where_container {
     height: 200vh;
+    width: 100vw;
 }
 
 .where_title {
@@ -70,8 +71,9 @@ a{
 }
 
 #b1 {
-    background-image: url("./albuferia.jpg");
-    background-size: contain;
+    background-image: url("./praia-da-rocha-beach-summer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
     display: flex;
     align-items: center;
@@ -80,7 +82,7 @@ a{
 }
 
 #b2 {
-    background-image: url("./praia-da-rocha-beach-summer.jpg");
+    background-image: url("./albuferia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
@@ -99,6 +101,59 @@ a{
     cursor: pointer;  
     background-color: rgba(62, 61, 56, 0.65);
 }
+@media only screen and (max-width: 400px)  { 
+    body {
+        overflow-x: hidden;
+    }
+    .where_title {
+        flex-direction: column;
+    }
+    .half_page{
+        width: 100vw;
+    }
+    #title{
+        width: 100vw;
+        height: 25vh;
+        font-size: 1rem;
+        letter-spacing: 0.75rem;
+        font-family: 'Lemon', cursive;
+        border-top: 0.5rem white solid; 
+        border-bottom: 0.5rem white solid;   
+    }
+    .title_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60vw;
+    }
+    .title_text_bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    #links{
+        width:100vw;
+        height: 75vh;
+    }
+    .top {
+        height: 34%;
+        font-size: 1.5rem;
+        background-position:left;
+    }
+    .bottom {
+        height: 66%;
+        width: 100vw;
+        flex-direction: column;
+        font-size: 1.25rem;
+    }
+    #b1, #b2 {
+        width: 100%;
+        height: 50%;
+        border-bottom: 0.5rem white solid; 
+    }
+    #b2 {
+        background-position: center;
+    }
+}
 
 .where_page {
     height: 100vh;
@@ -113,6 +168,7 @@ a{
 .where_page h2 {
     font-size: 4rem;
 }
+
 
 #where_title {    
     background: rgb(168,176,163);
@@ -152,8 +208,12 @@ a{
 #left {
     align-items: center;
     width: 20vw;
-    padding-right: 4rem;
     margin-right: 4rem;
+}
+
+#left_text {
+    overflow-y: scroll;
+    padding-right: 4rem;
 }
 
 #right {
@@ -165,7 +225,45 @@ a{
 #right h3 {
     text-decoration: underline;
 }
+@media only screen and (max-width: 400px)  { 
+    .where_page h2 {
+        font-size: 3rem;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
+    }
+    .text_box{
+        height: 30vh;
+        padding: 1.5rem 10rem 1rem 2rem;
+    }
+    #left {
+        padding-right: 0rem;
+        margin-right: 0rem;
+        width: 50vw;
+    }
+    #left_text {
+        padding-right: 2rem;
+    }
+    
+    #couple {
+        max-width: 35vw;
+    }
 
+    #right_box {
+        width: 50vw;
+        padding-right: 0rem;
+    
+    }
+    
+    #right {
+        padding-right: 0rem;
+        width: 45vw;
+    }
+    
+}
 #albufeira {
     background-image: url(albuferia1.jpg);
     background-size: cover;

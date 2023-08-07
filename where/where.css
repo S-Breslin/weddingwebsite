@@ -216,15 +216,35 @@ a{
     padding-right: 4rem;
 }
 
-#right {
-    overflow-y: scroll;  
-    width: 35vw;
-    padding-right: 4rem;
+#right_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60dvh;
 }
 
-#right h3 {
-    text-decoration: underline;
+#right_box h3{
+    font-size: 2rem;
+
 }
+
+#f_accommodation, #f_activities, #f_food {
+    overflow-y: hidden;  
+    width: 35vw;
+    height: 5dvh;
+    padding-right: 1rem;
+}
+#f_accommodation:hover, #f_activities:hover, #f_food:hover {
+    cursor: pointer;
+}
+
+#f_accommodation_text, #f_activities_text, #f_food_text {
+    visibility: hidden;
+    overflow-y: scroll;
+    padding-right: 4rem;
+    width: 31vw;
+}
+
 
 #praia {
     background-image: url(./praia-da-rocha-beach-summer.jpg);

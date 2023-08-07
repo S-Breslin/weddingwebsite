@@ -1,3 +1,62 @@
+let accommodation = document.getElementById("f_accommodation");
+let accommodationText = document.getElementById("f_accommodation_text");
+
+let activity = document.getElementById("f_activities");
+let activityText = document.getElementById("f_activities_text");
+
+let food = document.getElementById("f_food");
+let foodText = document.getElementById("f_food_text");
+
+let showFood = () => {
+    food.style.height = '100%';
+    foodText.style.visibility = 'visible';
+    activity.style.display = 'none';
+    accommodation.style.display = 'none';
+}
+
+let hideFood = () => {
+    food.style.height = '5dvh';
+    foodText.style.visibility = 'hidden';
+    activity.style.display = 'flex';
+    accommodation.style.display = 'flex';
+}
+
+food.onclick = showFood;
+
+food.ondblclick = hideFood;
+
+let showAccommodation = () => {
+    accommodation.style.height = '100%';
+    accommodationText.style.visibility = 'visible';
+    activity.style.display = 'none';
+    food.style.display = 'none';
+}
+let hideAccommodations = () => {
+    accommodation.style.height = '5dvh';
+    accommodationText.style.visibility = 'hidden';
+    activity.style.display = 'flex';
+    food.style.display = 'flex';
+}
+accommodation.onclick = showAccommodation;
+accommodation.ondblclick = hideAccommodations;
+
+let showActivity = () => {
+    activity.style.height = '100%';
+    activityText.style.visibility = 'visible';
+    food.style.display = 'none';
+    accommodation.style.display = 'none';
+}
+
+let hideActivity = () => {
+    activity.style.height = '5dvh';
+    activityText.style.visibility = 'hidden';
+    food.style.display = 'flex';
+    accommodation.style.display = 'flex';
+}
+
+activity.onclick = showActivity;
+activity.ondblclick = hideActivity;
+
 /*let tl = gsap.timeline({
     duration: 1,
     delay: 0.5

@@ -101,7 +101,7 @@ a{
     cursor: pointer;  
     background-color: rgba(62, 61, 56, 0.65);
 }
-@media only screen and (max-width: 400px)  { 
+@media only screen and (max-width: 500px)  { 
     body {
         overflow-x: hidden;
     }
@@ -225,7 +225,7 @@ a{
 #right h3 {
     text-decoration: underline;
 }
-@media only screen and (max-width: 400px)  { 
+@media only screen and (max-width: 500px)  { 
     .where_page h2 {
         font-size: 3rem;
     }

@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     border: 0; 
     vertical-align: baseline;
-    width: 100vw;
+    width: 100dvw;
     background-color: #697261;
     font-family: serif;
 }
@@ -15,18 +15,18 @@ a{
 
 
 #where_container {
-    height: 200vh;
-    width: 100vw;
+    height: 200dvh;
+    width: 100dvw;
 }
 
 .where_title {
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     overflow: hidden;
 }
 
 .half_page {
-    width: 50vw;
+    width: 50dvw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,11 +109,11 @@ a{
         flex-direction: column;
     }
     .half_page{
-        width: 100vw;
+        width: 100dvw;
     }
     #title{
-        width: 100vw;
-        height: 25vh;
+        width: 100dvw;
+        height: 25dvh;
         font-size: 1rem;
         letter-spacing: 0.75rem;
         font-family: 'Lemon', cursive;
@@ -124,15 +124,15 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 60vw;
+        width: 60dvw;
     }
     .title_text_bottom{
         display: flex;
         justify-content: space-between;
     }
     #links{
-        width:100vw;
-        height: 75vh;
+        width:100dvw;
+        height: 75dvh;
     }
     .top {
         height: 34%;
@@ -141,7 +141,7 @@ a{
     }
     .bottom {
         height: 66%;
-        width: 100vw;
+        width: 100dvw;
         flex-direction: column;
         font-size: 1.25rem;
     }
@@ -156,8 +156,8 @@ a{
 }
 
 .where_page {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,8 +182,8 @@ a{
 }
 
 .container {
-    height: 80vh;
-    width: 90vw;
+    height: 80dvh;
+    width: 90dvw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -191,8 +191,8 @@ a{
 
 .text_box {
     background-color:  rgba(62, 61, 56, 0.75);
-    margin-top: 5vh;
-    height: 60vh;
+    margin-top: 5dvh;
+    height: 60dvh;
     border-radius: 1rem;
     padding: 2.5rem 0rem 2.5rem 4rem;
     display: flex;
@@ -201,13 +201,13 @@ a{
 }
 
 #couple {
-    max-width: 15vw;
+    max-width: 15dvw;
     border-radius: 0.75rem;
 }
 
 #left {
     align-items: center;
-    width: 20vw;
+    width: 20dvw;
     margin-right: 4rem;
 }
 
@@ -218,7 +218,7 @@ a{
 
 #right {
     overflow-y: scroll;  
-    width: 35vw;
+    width: 35dvw;
     padding-right: 4rem;
 }
 
@@ -232,35 +232,37 @@ a{
     .container {
         flex-direction: column;
         align-items: center;
-        height: 70vh;
-        width: 100vw;
+        height: 70dvh;
+        width: 100dvw;
     }
     .text_box{
-        height: 30vh;
+        height: 30dvh;
         padding: 1.5rem 10rem 1rem 2rem;
     }
     #left {
         padding-right: 0rem;
         margin-right: 0rem;
-        width: 50vw;
+        width: 65dvw;
     }
     #left_text {
         padding-right: 2rem;
+        scrollbar-face-color: #fff;
     }
     
     #couple {
-        max-width: 35vw;
+        max-width: 35dvw;
     }
 
     #right_box {
-        width: 50vw;
+        width: 65dvw;
         padding-right: 0rem;
     
     }
     
     #right {
-        padding-right: 0rem;
-        width: 45vw;
+        width: 55vw;
+        padding-right: 0;
+        scrollbar-face-color: #fff;
     }
     
 }

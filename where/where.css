@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     border: 0; 
     vertical-align: baseline;
-    width: 100dvw;
+    width: 100vw;
     background-color: #697261;
     font-family: serif;
 }
@@ -16,7 +16,7 @@ a{
 
 #where_container {
     height: 200dvh;
-    width: 100dvw;
+    width: 100vw;
 }
 
 .where_title {
@@ -109,11 +109,11 @@ a{
         flex-direction: column;
     }
     .half_page{
-        width: 100dvw;
+        width: 100vw;
     }
     #title{
         width: 100vw;
-        height: 25dvh;
+        height: 25%;
         font-size: 1rem;
         letter-spacing: 0.75rem;
         font-family: 'Lemon', cursive;
@@ -132,7 +132,7 @@ a{
     }
     #links{
         width:100vw;
-        height: 75dvh;
+        height: 75%;
     }
     .top {
         height: 34%;
@@ -182,7 +182,7 @@ a{
 }
 
 .container {
-    height: 80dvh;
+    height: 80vh;
     width: 90vw;
     display: flex;
     justify-content: center;
@@ -191,8 +191,8 @@ a{
 
 .text_box {
     background-color:  rgba(62, 61, 56, 0.75);
-    margin-top: 5dvh;
-    height: 60dvh;
+    margin-top: 5vh;
+    height: 60vh;
     border-radius: 1rem;
     padding: 2.5rem 0rem 2.5rem 4rem;
     display: flex;
@@ -232,7 +232,7 @@ a{
     .container {
         flex-direction: column;
         align-items: center;
-        height: 70dvh;
+        height: 70%;
         width: 100vw;
     }
     .text_box{

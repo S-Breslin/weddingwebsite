@@ -14,6 +14,27 @@ let foodText = document.getElementById("f_food_text");
 let foodOpen = document.getElementById("food_open");
 let foodClose = document.getElementById("food_close");
 
+let anim = gsap.timeline();
+anim.to("#f_accommodation_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1})
+    .to("#f_activities_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1})
+    .to("#f_food_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1});
+
+anim.play();
+
+accommodationText.addEventListener("scroll", (event) => {
+    console.log("why won't this work");
+    anim.pause();
+});
+activityText.addEventListener("scroll", (event) => {
+    console.log("why won't this work");
+    anim.pause();
+});
+foodText.addEventListener("scroll", (event) => {
+    console.log("why won't this work");
+    anim.pause();
+});
+
+
 let showFood = () => {
     food.style.height = '100%';
     foodText.style.visibility = 'visible';
@@ -23,6 +44,8 @@ let showFood = () => {
     if(window.innerWidth < 500) {
         left.style.display = 'none';
     };
+
+    anim.resume();
 }
 
 let hideFood = () => {
@@ -47,6 +70,7 @@ let showAccommodation = () => {
     if(window.innerWidth < 500) {
         left.style.display = 'none';
     };
+    anim.resume();
 }
 let hideAccommodations = () => {
     accommodation.style.height = '5dvh';
@@ -68,6 +92,7 @@ let showActivity = () => {
     if(window.innerWidth < 500) {
         left.style.display = 'none';
     };
+    anim.resume();
 }
 
 let hideActivity = () => {
@@ -113,7 +138,7 @@ gsap.to ("#test3", {
 })
 */
 
-gsap.to("#expand", {y:"8px", duration: 0.75, yoyo:true, repeat: -1});
+        
 /*
 let expand = document.getElementById("expand");
 
@@ -122,6 +147,7 @@ if(accommodationText.scrollHeight - Math.abs(accommodationText.scrollTop) === ac
     expand.style.visibility = 'hidden';
 }
 */
+
 gsap.utils.toArray(".where_page").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,

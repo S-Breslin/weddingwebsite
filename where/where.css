@@ -331,7 +331,7 @@ a{
 
 @media only screen and (max-width: 500px)  { 
     .where_page h2 {
-        font-size: 2.75em;
+        font-size: 2.5rem;
     }
     .container {
         flex-direction: column;
@@ -340,7 +340,7 @@ a{
         width: 100vw;
     }
     .text_box{
-        height: 30dvh;
+        height: 25dvh;
         padding: 1.5rem 0rem 1rem 2rem;
     }
     #left {
@@ -360,6 +360,7 @@ a{
     #right_box {
         width: 80%;
         padding-right: 0rem;
+        height: 50dvh;
     
     }
     
@@ -377,6 +378,9 @@ a{
     #right_box h3 {
         font-size: 1rem;
         text-align: left;
+    }
+    #accommodation_close, #activities_close, #food_close {
+        padding-right: 0.5rem;
     }
 
     .boat {

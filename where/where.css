@@ -358,16 +358,25 @@ a{
     }
 
     #right_box {
-        width: 65vw;
+        width: 80%;
         padding-right: 0rem;
     
     }
     
-    #right {
-        width: 55vw;
+    #f_accommodation, #f_activities, #f_food {
+        width: 90%;
         padding-right: 0;
         overflow-x: hidden;
         scrollbar-face-color: #fff;
+    }
+
+    #f_accommodation_text, #f_activities_text, #f_food_text {
+        width: 90%;
+    }
+
+    #right_box h3 {
+        font-size: 1rem;
+        text-align: left;
     }
 
     .boat {

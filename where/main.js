@@ -1,3 +1,4 @@
+let left = document.getElementById("left");
 let accommodation = document.getElementById("f_accommodation");
 let accommodationText = document.getElementById("f_accommodation_text");
 let accommodationOpen = document.getElementById("accommodation_open");
@@ -19,6 +20,9 @@ let showFood = () => {
     activity.style.display = 'none';
     accommodation.style.display = 'none';
     foodClose.style.visibility = 'visible';
+    if(window.innerWidth < 500) {
+        left.style.display = 'none';
+    };
 }
 
 let hideFood = () => {
@@ -27,6 +31,7 @@ let hideFood = () => {
     activity.style.display = 'flex';
     accommodation.style.display = 'flex';
     foodClose.style.visibility = 'hidden';
+    left.style.display = 'flex';
 }
 
 foodOpen.onclick = showFood;
@@ -39,6 +44,9 @@ let showAccommodation = () => {
     activity.style.display = 'none';
     food.style.display = 'none';
     accommodationClose.style.visibility = 'visible';
+    if(window.innerWidth < 500) {
+        left.style.display = 'none';
+    };
 }
 let hideAccommodations = () => {
     accommodation.style.height = '5dvh';
@@ -46,6 +54,7 @@ let hideAccommodations = () => {
     activity.style.display = 'flex';
     food.style.display = 'flex';
     accommodationClose.style.visibility = 'hidden';
+    left.style.display = 'flex';
 }
 accommodationOpen.onclick = showAccommodation;
 accommodationClose.onclick = hideAccommodations;
@@ -56,6 +65,9 @@ let showActivity = () => {
     food.style.display = 'none';
     accommodation.style.display = 'none';
     activityClose.style.visibility = 'visible';
+    if(window.innerWidth < 500) {
+        left.style.display = 'none';
+    };
 }
 
 let hideActivity = () => {
@@ -64,6 +76,7 @@ let hideActivity = () => {
     food.style.display = 'flex';
     accommodation.style.display = 'flex';
     activityClose.style.visibility = 'hidden';
+    left.style.display = 'flex';
 }
 
 activityOpen.onclick = showActivity;

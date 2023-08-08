@@ -27,7 +27,7 @@ let back = [
 for(let i=0; i<band.length; i++) {
     band[i].addEventListener('mouseover', () => {
         text[i].style.visibility = 'visible';
-        back[i].style.height = ("60%");
+        back[i].style.height = ("90%");
     });
     band[i].addEventListener('mouseleave', () => {
         text[i].style.visibility = 'hidden';        

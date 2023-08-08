@@ -13,7 +13,7 @@ a {
 }
 
 header {
-    height: 15vh;
+    height: 15dvh;
     background-color: #85948D;
     display: flex;
     justify-content: center;
@@ -25,8 +25,8 @@ header {
     display: flex;
     border-radius: 40%;
     border: 10px solid #697261;    
-    height: 25vh;
-    margin-top: 15vh;
+    height: 25dvh;
+    margin-top: 15dvh;
     margin-bottom: 20px;
 
 }
@@ -59,7 +59,8 @@ ul, li {
 }
 
 .banner {
-    height: 400px;
+    max-height: 400px;
+    height: 40dvh;
     background-image: url(./images/ferragudo_banner.jpg);
     background-size:cover;
     background-position: top;
@@ -68,7 +69,7 @@ ul, li {
 }
 
 .container {
-    height: 45vh;
+    height: 45dvh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -133,7 +134,7 @@ ul, li {
 }
 
 .get_there {
-    height: 100vh;
+    height: 100dvh;
     background-color: #697261;
 }
 
@@ -179,7 +180,7 @@ ul, li {
 
 
 .where_stay {
-    height:400vh;
+    height:400dvh;
     width:100vw;
 }
 .where_head {
@@ -293,7 +294,7 @@ ul, li {
 
 
 .things_do {
-    height: 100vh;
+    height: 100dvh;
     background-color: #A8B0A3;
     display: flex;
     flex-direction: column;
@@ -377,7 +378,11 @@ ul, li {
     height: 15%;
     padding: 0% 5% 5% 5%;
 }
+.things_box h2 {
+    padding-bottom: 2rem;
+}
 
 .things_text {
-    visibility: hidden;    
+    visibility: hidden;
+    font-size: 0.8rem;    
 }

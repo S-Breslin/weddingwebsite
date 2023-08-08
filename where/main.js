@@ -113,7 +113,15 @@ gsap.to ("#test3", {
 })
 */
 
+gsap.to("#expand", {y:"8px", duration: 0.75, yoyo:true, repeat: -1});
+/*
+let expand = document.getElementById("expand");
 
+
+if(accommodationText.scrollHeight - Math.abs(accommodationText.scrollTop) === accommodationText.clientHeight){
+    expand.style.visibility = 'hidden';
+}
+*/
 gsap.utils.toArray(".where_page").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,

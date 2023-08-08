@@ -200,6 +200,11 @@ a{
     text-align: justify;
 }
 
+#expand {
+    align-self: center;
+    margin-top: 1rem;
+}
+
 #couple {
     max-width: 15vw;
     border-radius: 0.75rem;
@@ -368,7 +373,6 @@ a{
         width: 90%;
         padding-right: 0;
         overflow-x: hidden;
-        scrollbar-face-color: #fff;
     }
 
     #f_accommodation_text, #f_activities_text, #f_food_text {

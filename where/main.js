@@ -1,17 +1,24 @@
 let accommodation = document.getElementById("f_accommodation");
 let accommodationText = document.getElementById("f_accommodation_text");
+let accommodationOpen = document.getElementById("accommodation_open");
+let accommodationClose = document.getElementById("accommodation_close");
 
 let activity = document.getElementById("f_activities");
 let activityText = document.getElementById("f_activities_text");
+let activityOpen =document.getElementById("activities_open");
+let activityClose = document.getElementById("activities_close");
 
 let food = document.getElementById("f_food");
 let foodText = document.getElementById("f_food_text");
+let foodOpen = document.getElementById("food_open");
+let foodClose = document.getElementById("food_close");
 
 let showFood = () => {
     food.style.height = '100%';
     foodText.style.visibility = 'visible';
     activity.style.display = 'none';
     accommodation.style.display = 'none';
+    foodClose.style.visibility = 'visible';
 }
 
 let hideFood = () => {
@@ -19,32 +26,36 @@ let hideFood = () => {
     foodText.style.visibility = 'hidden';
     activity.style.display = 'flex';
     accommodation.style.display = 'flex';
+    foodClose.style.visibility = 'hidden';
 }
 
-food.onclick = showFood;
+foodOpen.onclick = showFood;
 
-food.ondblclick = hideFood;
+foodClose.onclick = hideFood;
 
 let showAccommodation = () => {
     accommodation.style.height = '100%';
     accommodationText.style.visibility = 'visible';
     activity.style.display = 'none';
     food.style.display = 'none';
+    accommodationClose.style.visibility = 'visible';
 }
 let hideAccommodations = () => {
     accommodation.style.height = '5dvh';
     accommodationText.style.visibility = 'hidden';
     activity.style.display = 'flex';
     food.style.display = 'flex';
+    accommodationClose.style.visibility = 'hidden';
 }
-accommodation.onclick = showAccommodation;
-accommodation.ondblclick = hideAccommodations;
+accommodationOpen.onclick = showAccommodation;
+accommodationClose.onclick = hideAccommodations;
 
 let showActivity = () => {
     activity.style.height = '100%';
     activityText.style.visibility = 'visible';
     food.style.display = 'none';
     accommodation.style.display = 'none';
+    activityClose.style.visibility = 'visible';
 }
 
 let hideActivity = () => {
@@ -52,10 +63,11 @@ let hideActivity = () => {
     activityText.style.visibility = 'hidden';
     food.style.display = 'flex';
     accommodation.style.display = 'flex';
+    activityClose.style.visibility = 'hidden';
 }
 
-activity.onclick = showActivity;
-activity.ondblclick = hideActivity;
+activityOpen.onclick = showActivity;
+activityClose.onclick = hideActivity;
 
 /*let tl = gsap.timeline({
     duration: 1,

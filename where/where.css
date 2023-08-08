@@ -228,6 +228,27 @@ a{
 
 }
 
+.tbox_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tbox_top h3 {
+    margin-top: -0.015rem;
+
+}
+
+#accommodation_close, #activities_close, #food_close {
+    visibility: hidden;
+}
+
+#accommodation_close:hover, #activities_close:hover, #food_close:hover {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+
 #f_accommodation, #f_activities, #f_food {
     overflow-y: hidden;  
     width: 35vw;
@@ -236,6 +257,10 @@ a{
 }
 #f_accommodation:hover, #f_activities:hover, #f_food:hover {
     cursor: pointer;
+}
+
+#accommodation_open:hover, #activities_open:hover, #food_open:hover {
+    text-decoration: underline;
 }
 
 #f_accommodation_text, #f_activities_text, #f_food_text {

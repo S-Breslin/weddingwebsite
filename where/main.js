@@ -14,24 +14,54 @@ let foodText = document.getElementById("f_food_text");
 let foodOpen = document.getElementById("food_open");
 let foodClose = document.getElementById("food_close");
 
-let anim = gsap.timeline();
-anim.to("#f_accommodation_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1})
-    .to("#f_activities_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1})
-    .to("#f_food_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1});
+let leftText = document.getElementById("left_text");
+let pText = document.getElementById("p_text");
+let oText = document.getElementById("o_text");
 
-anim.play();
+//animation of scroll prompt
+
+let anim = gsap.timeline();
+
+let animF, animP, animO;
+//restrict to mobile screen sizes
+
+if(window.innerWidth < 500) {
+        anim.to("#f_accommodation_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1})
+        .to("#f_activities_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1})
+        .to("#f_food_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1});
+        
+        anim.play();
+
+        animF = gsap.to("#left_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1});
+        
+        animP = gsap.to("#p_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1});
+        
+        animO = gsap.to("#o_text", {y:"6px", duration: 0.85, yoyo:true, repeat: -1});
+        
+        console.log(window.innerWidth);
+}
 
 accommodationText.addEventListener("scroll", (event) => {
-    console.log("why won't this work");
     anim.pause();
 });
 activityText.addEventListener("scroll", (event) => {
-    console.log("why won't this work");
     anim.pause();
 });
 foodText.addEventListener("scroll", (event) => {
-    console.log("why won't this work");
     anim.pause();
+});
+
+leftText.addEventListener("scroll", (event) => {
+    console.log("why won't this work");
+    animF.pause();
+});
+pText.addEventListener("scroll", (event) => {
+    console.log("why won't this work");
+    animP.pause();
+});
+oText.addEventListener("scroll", (event) => {
+    console.log("why won't this work");
+    animO.pause();
 });
 
 
@@ -45,7 +75,9 @@ let showFood = () => {
         left.style.display = 'none';
     };
 
-    anim.resume();
+    if(window.innerWidth < 500){
+        anim.resume();
+    }
 }
 
 let hideFood = () => {
@@ -138,20 +170,10 @@ gsap.to ("#test3", {
 })
 */
 
-        
-/*
-let expand = document.getElementById("expand");
-
-
-if(accommodationText.scrollHeight - Math.abs(accommodationText.scrollTop) === accommodationText.clientHeight){
-    expand.style.visibility = 'hidden';
-}
-*/
-
 gsap.utils.toArray(".where_page").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
-        start: "top top",
+        start: "top top 10%",
         pin: true,
         pinSpacing: false,
         markers: true,
@@ -199,13 +221,12 @@ let title = document.getElementById("title");
 tl.from(title, {y:"100vh", duration: duration, delay: 0.5,  ease:"power2"})
 .from(".top", {x:"100vw", duration: duration, ease:"power2"})
 .from("#b1", {y:"50vh", duration: duration,  ease:"power2"})
-.from("#b2", {x:"50vw", duration: 1,  ease:"power2"})
+.from("#b2", {x:"100vw", duration: 1,  ease:"power2"})
 
 var tl1 = gsap.timeline ();
 
 function init() {
-    tl1.to("#type", {text: "Ferragudo", ease:"none", duration: 1.5});
-    gsap.from('#left', {opacity: 0, duration: 3, delay: 2, ease:"power2"});
+    tl1.from('#left', {opacity: 0, duration: 3, delay: 2, ease:"power2"});
     gsap.from('#right_box', {opacity: 0, duration: 3, delay: 3, ease:"power2"});
 }
 /*

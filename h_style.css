@@ -6,6 +6,7 @@ html, body {
     width: 100vw;
     background-color: #A8B0A3;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -28,9 +29,76 @@ header {
     height: 25dvh;
     margin-top: 15dvh;
     margin-bottom: 20px;
-
+    position: absolute;
+    z-index: 10;
+}
+#mid_nav {
+    padding-left: 3rem;
+    display: none;
+    width: 100vw;
+    height: 15dvh;
+    align-items: center;
 }
 
+#menu_button {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#menu_button:hover {
+    cursor: pointer;
+}
+
+menu {
+    position: absolute;
+    margin-top: -2.5%;
+    padding-top: 10%;
+    z-index: 5;
+    height: 100dvh;
+    width: 100vw;
+    background: rgb(133,148,141);
+    background: linear-gradient(45deg, rgba(133,148,141,1) 0%, rgba(105,114,97,1) 100%);
+    border-top: 0.5rem white solid;
+    display: none;
+    flex-direction: column;
+
+    
+}
+
+#menu_content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menu_links {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    
+}
+
+#menu_close {
+    color: #fff;
+    font-size: 2rem;
+}
+
+#menu_footer {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 5%;
+    text-align: center;
+    width: 100%;
+}
+
+#menu_footer h4 {
+    letter-spacing: 1rem;
+}
+
+#menu_footer p {
+    font-size: 1.5rem;
+}
 
 nav {
     display: flex;
@@ -58,8 +126,12 @@ ul, li {
     margin-left: -20px;
 }
 @media only screen and (max-width: 1200px)  { 
+    
     nav {
-        visibility: hidden;
+        display: none;
+    }
+    #mid_nav {
+        display: flex;
     }
 }
 
@@ -95,7 +167,7 @@ ul, li {
     border-radius: 0 1rem 1rem 0;
 }
 
-@media only screen and (max-width: 400px)  { 
+@media only screen and (max-width: 500px)  { 
     .container {
        visibility: hidden;
     }

@@ -376,13 +376,41 @@ ul, li {
     text-align: center;
     width: 100%;
     height: 15%;
-    padding: 0% 5% 5% 5%;
-}
-.things_box h2 {
-    padding-bottom: 2rem;
+    padding: 0% 5% 10% 5%;
 }
 
 .things_text {
     visibility: hidden;
     font-size: 0.8rem;    
+}
+
+@media only screen and (max-width: 500px)  { 
+    body {
+        overflow-x: hidden;
+    }
+    .things_container {
+        width: 100vw;
+        height: 90dvh;
+        background-color: #A8B0A3;
+    }
+    .things_box {
+        height: 30dvh;
+        width: 47.5%;
+    }
+    #things_title{
+        height: 10dvh;
+        display: flex;
+        align-items: flex-start;
+    }
+    .sect_title {
+        font-size: 2rem;
+    }
+    .band2 {
+        padding: 0% 5% 20% 5%;
+        font-size: 0.8rem;
+    }
+    .things_text {
+        font-size: 0.7rem;    
+    }
+
 }

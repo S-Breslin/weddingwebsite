@@ -52,15 +52,12 @@ foodText.addEventListener("scroll", (event) => {
 });
 
 leftText.addEventListener("scroll", (event) => {
-    console.log("why won't this work");
     animF.pause();
 });
 pText.addEventListener("scroll", (event) => {
-    console.log("why won't this work");
     animP.pause();
 });
 oText.addEventListener("scroll", (event) => {
-    console.log("why won't this work");
     animO.pause();
 });
 

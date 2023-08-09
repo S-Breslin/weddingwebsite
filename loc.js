@@ -7,6 +7,7 @@ band[3] = document.getElementById("zoo");
 band[4] = document.getElementById("golf");
 band[5] = document.getElementById("kayak");
 
+
 let text = [
     document.getElementById("caves_text"),
     document.getElementById("slide_text"),
@@ -28,6 +29,7 @@ for(let i=0; i<band.length; i++) {
     band[i].addEventListener('mouseover', () => {
         text[i].style.visibility = 'visible';
         back[i].style.height = ("90%");
+
     });
     band[i].addEventListener('mouseleave', () => {
         text[i].style.visibility = 'hidden';        

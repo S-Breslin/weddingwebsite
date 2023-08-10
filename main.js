@@ -10,6 +10,8 @@ let showImage = () => {
         opacity: 0,
         duration: 5, ease: "slow(0.3, 2)"
     });
+    window.location.href = "./home.html";
+
 }
 
 

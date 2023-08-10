@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./rsvp.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Great+Vibes&family=Oregano&family=PT+Mono&family=Raleway:wght@400;500;600&family=Roboto+Serif:ital,wght@0,200;1,200&family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul class="nav1">
+          <li>Home</li>
+          <li><a href="./location.html">Location</a></li>
+          <li><a href="#rsvp">R.S.V.P</a></li>
+        </ul>
+      </nav>
+      <div id="mid_nav">
+        <span id="menu_button" class="material-symbols-outlined">
+          menu
+          </span>
+      </div>
+
+      <nav>
+        <ul class="nav2">
+          <li><a href="./wedding_day.html">The Wedding Day</a></li>
+          <li><a href="./daytwo.html">Day Two</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <menu id="menu">
+      <div id="menu_content">
+        <ul id="menu_links">
+          <a href="./home.html">Home</a>
+          <a href="./location.html">Locations</a>
+          <a href="#RSVP">RSVP</a>
+          <a href="./wedding_day.html">The Wedding Day</a>
+          <a href="./daytwo.html">Day Two</a>
+          <a href="./faq.html">FAQ</a>
+        </ul>
+        <span id="menu_close" class="material-symbols-outlined">
+          close
+          </span>
+      </div>
+      <div id="menu_footer">
+        <hr>
+        <h4>19/07/2024</h4>
+        <p>Algarve, Portugal</p>
+      </div>
+    </menu>
+    <section class="rsvp" id="rsvp">
+      <h1>R.S.V.P</h1>
+      <form action="" method="get" class="rsvp_form">
+        <div class="rsvp_form_content">
+          <div>
+            <input type="text" placeholder="Guest Names" required="yes" />
+          </div>
+          <fieldset>
+            <legend>Wedding Day - R.S.V.P</legend>
+            <div>
+              <input type="checkbox" name="yes" id="day2_rsvp" required />
+              <label for="day2_rsvp">Yes</label>
+            </div>
+            <div>
+              <input type="checkbox" name="no" id="day2_rsvp" required />
+              <label for="day2_rsvp">No</label>
+            </div>
+          </fieldset>
+          <div>
+            <label for="">If Yes...</label>
+            <input type="text" placeholder="Dietary Requirements" />
+          </div>
+          <fieldset>
+            <legend>Day Two - R.S.V.P</legend>
+            <div>
+              <input type="checkbox" name="yes" id="day2_rsvp" />
+              <label for="day2_rsvp">Yes</label>
+            </div>
+            <div>
+              <input type="checkbox" name="no" id="day2_rsvp" />
+              <label for="day2_rsvp">No</label>
+            </div>
+          </fieldset>
+          <button>Submit</button>
+        </div>
+      </form>
+    </section>
+    <script src="./header.js"></script>
+  </body>
+</html>

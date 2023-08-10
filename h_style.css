@@ -13,130 +13,6 @@ a {
     color:  white;
 }
 
-header {
-    height: 15dvh;
-    width: 100vw;
-    background-color: #85948D;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    border-bottom: 3px solid white;
-}
-
-.logo{
-    display: flex;
-    border-radius: 40%;
-    border: 10px solid #697261;    
-    height: 25dvh;
-    margin-top: 15dvh;
-    margin-bottom: 20px;
-    position: absolute;
-    z-index: 10;
-}
-#mid_nav {
-    padding-left: 3rem;
-    display: none;
-    width: 100vw;
-    height: 15dvh;
-    align-items: center;
-}
-
-#menu_button {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 800;
-}
-
-#menu_button:hover {
-    cursor: pointer;
-}
-
-menu {
-    position: absolute;
-    margin-top: -2.5%;
-    padding-top: 10%;
-    z-index: 5;
-    height: 100dvh;
-    width: 90vw;
-    overflow-x: hidden;
-    background: rgb(133,148,141);
-    background: linear-gradient(45deg, rgba(133,148,141,1) 0%, rgba(105,114,97,1) 100%);
-    border-top: 0.5rem white solid;
-    display: none;
-    flex-direction: column;
-
-    
-}
-
-#menu_content {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#menu_links {
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    
-}
-
-#menu_close {
-    color: #fff;
-    font-size: 2rem;
-}
-
-#menu_footer {
-    color: #fff;
-    font-family: 'Dancing Script', cursive;
-    padding-top: 5%;
-    text-align: center;
-    width: 100%;
-}
-
-#menu_footer h4 {
-    letter-spacing: 1rem;
-}
-
-#menu_footer p {
-    font-size: 1.5rem;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 40vw;
-    color: white;font-family: 'Roboto Serif', serif;
-    font-size: 1.35rem;
-}
-
-li:hover {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.nav1, .nav2 {
-    display: flex;
-    justify-content: space-between;
-    width: 65%;    
-    list-style: none;
-    width: 80%;
-}
-
-ul, li {
-    margin-left: -20px;
-}
-@media only screen and (max-width: 1200px)  { 
-    
-    nav {
-        display: none;
-    }
-    #mid_nav {
-        display: flex;
-    }
-}
-
 .banner {
     max-height: 795px;
     height: 85dvh;
@@ -176,11 +52,8 @@ ul, li {
     #countdown {
         max-width: 300px;
     }
-    .logo {
-        height: 15vh;
-    }
     .banner {
-        height: 90vh;
+        height: 90dvh;
         background-position: -25em 0em;
     }
     body {        

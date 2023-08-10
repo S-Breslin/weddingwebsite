@@ -10,9 +10,19 @@ html, body {
 }
 
 .rsvp {
-    height: 100vh;
+    height: 85vh;
     background: rgb(105,114,97);
     background: linear-gradient(0deg, rgba(105,114,97,1) 0%, rgba(168,176,163,1) 68%); 
+    background-image: url(./images/Lady_of_the_Rock.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+#rsvp_content {    
+    background-color: rgba(133, 148, 141, 0.65);
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -20,31 +30,25 @@ html, body {
 }
 
 .rsvp h1 {
+    margin-top: 7.5%;
     color: white;
     font-size: 3rem;    
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 .rsvp_form {
     height: 90dvh;
-    width: 70vw;
+    width: 50vw;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    background-image: url(./images/Lady_of_the_Rock.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;    
+    justify-content: center;   
     margin-bottom: 2.5%;
     border-radius: 1rem;
 }
 
 .rsvp_form_content {
-    height: 80%;
+    height: 100%;
     width: 80%;
-    background-color: rgba(133, 148, 141, 0.75);
-    border: 3px white solid;
-    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -55,4 +59,31 @@ html, body {
 
 legend, label {
     color: white;
+}
+
+@media only screen and (max-width: 500px)  { 
+    body {        
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    #rsvp_content {    
+        background-color: rgba(133, 148, 141, 0.65);
+        height: 100%;
+        width: 100%;
+        justify-content: safe;
+}
+    .rsvp h1 {
+        color: white;
+        font-size: 3rem;    
+        font-family: 'Dancing Script', cursive;
+        margin-top: 14%;
+    }
+    .rsvp_form {
+        height: 45dvh;
+        padding-bottom: 15dvh;
+    }
+
+    .rsvp_form_content {
+        height: 80%;
+    }
 }

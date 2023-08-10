@@ -15,6 +15,7 @@ a {
 
 header {
     height: 15dvh;
+    width: 100vw;
     background-color: #85948D;
     display: flex;
     justify-content: center;
@@ -56,7 +57,8 @@ menu {
     padding-top: 10%;
     z-index: 5;
     height: 100dvh;
-    width: 100vw;
+    width: 90vw;
+    overflow-x: hidden;
     background: rgb(133,148,141);
     background: linear-gradient(45deg, rgba(133,148,141,1) 0%, rgba(105,114,97,1) 100%);
     border-top: 0.5rem white solid;
@@ -182,7 +184,8 @@ ul, li {
         background-position: -25em 0em;
     }
     body {        
-        width: 110vw;
+        width: 100vw;
+        overflow-x: hidden;
     }
 }
 

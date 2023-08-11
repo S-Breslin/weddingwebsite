@@ -1,6 +1,15 @@
 let logButton = document.getElementById("login");
 let imgContainer = document.getElementById("background");
 let content = document.getElementById("content");
+let password = document.getElementById("password");
+
+let showPassword = () => {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
 
 let loadHome = () => {
     window.location.href = "./home.html";
@@ -25,8 +34,15 @@ let showImage = () => {
 
 }
 
-
-logButton.onclick = showImage;
+logButton.addEventListener('click', () => {
+    if(password.value === "July24") {
+        showImage();
+    }
+    else {
+        console.log("wrong password");
+        alert("Incorrect password.")
+    }
+});
 
 let banners = document.getElementsByClassName("banner")
 let tiles = document.getElementById("tile");

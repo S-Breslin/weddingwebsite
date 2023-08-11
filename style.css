@@ -14,7 +14,11 @@ html, body {
     font-size: 4rem;
     padding-top: 10dvh;
 }
-
+label {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
 .container{
    display: flex;
    justify-content: center;

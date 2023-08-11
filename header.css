@@ -3,7 +3,7 @@ header {
     width: 100vw;
     background-color: #85948D;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;    
     border-bottom: 3px solid white;
 }
@@ -19,7 +19,6 @@ a {
     height: 25dvh;
     margin-top: 15dvh;
     margin-bottom: 20px;
-    position: absolute;
     z-index: 10;
 }
 #mid_nav {
@@ -127,8 +126,13 @@ ul, li {
 }
 
 @media only screen and (max-width: 500px)  { 
+    header {
+        justify-content: center;
+    }
+    
     .logo {
         height: 15vh;
+        position: absolute;
     }
     
     body {        

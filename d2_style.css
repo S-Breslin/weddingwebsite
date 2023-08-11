@@ -59,7 +59,7 @@ ul, li {
 }
 
 .main {
-    height: 84.7vh;
+    height: 84.7dvh;
     width: 100vw;
     background-image: url(./images/dayTwo.jpg);
     background-size:cover;
@@ -85,4 +85,23 @@ ul, li {
     font-weight: bold;
     font-size: 4rem;
     font-family: 'Roboto Serif', serif;
+}
+#monkies {
+    display: none;
+    opacity: 0;
+    width: 25vw;
+    min-width: 250px;
+}
+
+
+@media only screen and (max-width: 500px)  { 
+    body {
+
+        overflow: hidden;
+    }
+    
+    .main {
+        align-items: flex-start;
+        padding-top: 35%;
+    }
 }

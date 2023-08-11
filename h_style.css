@@ -90,8 +90,23 @@ html, body {
     font-size: 2em;
 }
  .count2 p {
-    margin-top: -50%;
  }
+
+ .test {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #day, #hour, #minute, #second {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
 
 .container {
     height: 45%;
@@ -101,8 +116,6 @@ html, body {
     flex-wrap: wrap;
     background-color: rgba(133, 148, 141, 0.75);
     }
-
-
 
 .location {
     background-image: url(./images/ferragudo.jpg);

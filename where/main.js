@@ -167,19 +167,25 @@ gsap.to ("#test3", {
 })
 */
 
-gsap.utils.toArray(".where_page").forEach((panel, i) => {
+let panels = gsap.utils.toArray(".where_page");
+
+
+//panels.push(document.getElementById('things'))
+
+panels.forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
-        start: "top top 10%",
+        start: "top top", // "top -5% top" when using snap
         pin: true,
         pinSpacing: false,
-        markers: true,
-        scub: 1,
-        snap: {
+        anticipatePin: 1,
+        markers: false,
+        scub: 1
+        /*snap: {
             snapTo: 1,
             duration: 1,
             ease: "sine"
-        }
+        }*/
     });    
 });
 

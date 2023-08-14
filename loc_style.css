@@ -89,23 +89,30 @@ a {
 .get_there {
     height: 100dvh;
     background-color: #697261;
+    background-image: url(./images/packbags.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 
 .get_content {    
-    height: 70%;
+    height: 80%;
     width: 80%;
-    display: flex; 
-    flex-direction: column;   
+    display: flex;  
     justify-content: space-between;
     align-items: center;
     margin-top: 1%;
     border-radius: 1rem;
-    background-image: url(./images/packbags.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
+
+.get_text h2 {
+    text-decoration: underline;
+}
 .get_text {
     display: flex;
     flex-direction: column;
@@ -117,6 +124,8 @@ a {
     border-radius: 0.5rem;
     border: 1px white solid;
     text-align: center;
+    width: 35%;
+    height: 40%
 }
 
 .map {
@@ -126,121 +135,18 @@ a {
 
 
 .where_stay {
-    height:400dvh;
+    height:200dvh;
     width:100vw;
 }
+
 .where_head {
     display: flex;
     justify-content: center;
 }
 
-.destination {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-family: 'Roboto Serif', serif;
-}
-
-#w_title {   
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-family: 'Roboto Serif', serif;
-    font-size: 2rem;
-    background-color: rgba(255, 255, 255, 0.85);
-    background: linear-gradient(0deg, rgba(168,176,163,0.5018207966780462) 54%, rgba(105,114,97,1) 100%); 
-    
-}
-
-.ferra_box {
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 0.75rem;
-    width: 65%;
-    height: 35%;
-    color: #85948D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5%;
-    font-size: 4rem;
-}
-
-.ferra_box:hover {
-    border: #3E3D38 0.25rem solid;
-    cursor: pointer;
-}
-
-.low_block {
-    height: 35%;
-    width: 65%;
-    display: flex;
-    justify-content:  space-between;    
-    margin-top: -5%;
-}
-
-.l_box {
-    width: 47.5%;
-    height: 100%;
-    background-color: rgba(62, 61, 56, 0.85);        
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.l_box:hover {
-    border: white 0.25rem solid;
-    cursor: pointer;
-}
-
-#head {
-    font-size: 4rem;
-}
-
-
-#ferra {  
-    background-image: url("./images/ferragudo3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.dest_text {
-    background-color: rgba(0, 0, 0, 0.75);
-    margin: 0.5%;
-    padding: 2.5%;
-    border-radius: 0.5rem;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.dest_text p {
-    padding: 5%;
-}
-
-#arrow {
-    transform: rotate(90deg);
-}
-
-#next {
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-}
-
-
 .things_do {
     height: 100dvh;
+    margin-top: 300dvh;
     background-color: #A8B0A3;
     display: flex;
     flex-direction: column;
@@ -248,8 +154,8 @@ a {
     justify-content: flex-start;
 }
 .things_container {
-    width: 80%;
-    height: 80%;
+    width: 80vw;
+    height: 75dvh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -373,6 +279,7 @@ a {
     }
     .get_text {
         width: 70%;
+        height: 20%;
     }
 
 }

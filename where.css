@@ -1,0 +1,433 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    vertical-align: baseline;
+    width: 100vw;
+    background-color: #697261;
+    font-family: serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#where_container {
+    height: 200dvh;
+    width: 100vw;
+}
+
+.where_title {
+    height: 50%;
+    display: flex;
+    overflow: hidden;
+}
+
+.half_page {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    width: 40%; 
+    background-color: #85948d;
+    color:  #fff;
+    text-align: center;
+    font-size: 4rem;
+    justify-content: space-around;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: 2rem;
+    font-weight: lighter;
+    border-right: #fff 0.5rem solid;
+}
+
+#links {
+    justify-content:  space-between;
+    color: white;
+    width: 60%
+}
+
+.top {
+    width: 100%;
+    height: 50%;
+    background-image: url("./where/ferragudo3.jpg");
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-size: 3.5rem;
+    border-bottom: 0.5rem white solid;    
+}
+
+.bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;    
+    font-size: 2.5rem;
+}
+
+#b1 {
+    background-image: url("./where/praia-da-rocha-beach-summer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 0.5rem white solid;
+}
+
+#b2 {
+    background-image: url("./where/albuferia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(62, 61, 56, 0.35);
+}
+
+.link:hover{
+    cursor: pointer;  
+    background-color: rgba(62, 61, 56, 0.65);
+}
+@media only screen and (max-width: 500px)  { 
+    body {
+        overflow-x: hidden;
+    }
+    .where_title {
+        flex-direction: column;
+    }
+    .half_page{
+        width: 100vw;
+    }
+    #title{
+        width: 100vw;
+        height: 25%;
+        font-size: 1rem;
+        letter-spacing: 0.75rem;
+        font-family: 'Lemon', cursive;
+        border-top: 0.5rem white solid; 
+        border-bottom: 0.5rem white solid;   
+    }
+    .title_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60vw;
+    }
+    .title_text_bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    #links{
+        width:100vw;
+        height: 75%;
+    }
+    .top {
+        height: 34%;
+        font-size: 1.5rem;
+        background-position:left;
+    }
+    .bottom {
+        height: 66%;
+        width: 100vw;
+        flex-direction: column;
+        font-size: 1.25rem;
+    }
+    #b1, #b2 {
+        width: 100%;
+        height: 50%;
+        border-bottom: 0.5rem white solid; 
+    }
+    #b2 {
+        background-position: center;
+    }
+}
+
+.where_page {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;    
+    font-family: 'Roboto Serif', serif;
+}
+.where_page_2 {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;    
+    font-family: 'Roboto Serif', serif;
+}
+
+.where_page h2 {
+    font-size: 4rem;
+}
+
+
+#where_title {    
+    background: rgb(168,176,163);
+    background: radial-gradient(circle, rgba(168,176,163,1) 54%, rgba(105,114,97,1) 100%); 
+}
+
+#ferragudo {
+    background-image: url("./where/ferragudo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.f_container {
+    height: 80dvh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text_box {
+    background-color:  rgba(62, 61, 56, 0.75);
+    margin-top: 2dvh;
+    height: 60dvh;
+    border-radius: 1rem;
+    padding: 2.5rem 0rem 2.5rem 4rem;
+    display: flex;
+    flex-direction: column;    
+    text-align: justify;
+}
+
+#expand {
+    align-self: center;
+    margin-top: 1rem;
+}
+
+#couple {
+    max-width: 15vw;
+    border-radius: 0.75rem;
+}
+
+#left {
+    align-items: center;
+    height: 65%;
+    width: 20vw;
+    margin-right: 4rem;
+}
+
+#left_text {
+    overflow-y: scroll;
+    padding-right: 4rem;
+}
+
+#right_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60dvh;
+}
+
+#right_box h3{
+    font-size: 2rem;
+
+}
+
+.tbox_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tbox_top h3 {
+    margin-top: -0.015rem;
+
+}
+
+#accommodation_close, #activities_close, #food_close {
+    visibility: hidden;
+}
+
+#accommodation_close:hover, #activities_close:hover, #food_close:hover {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+
+#f_accommodation, #f_activities, #f_food {
+    overflow-y: hidden;  
+    width: 35vw;
+    height: 5dvh;
+    padding-right: 1rem;
+}
+#f_accommodation:hover, #f_activities:hover, #f_food:hover {
+    cursor: pointer;
+}
+
+#accommodation_open:hover, #activities_open:hover, #food_open:hover {
+    text-decoration: underline;
+}
+
+#f_accommodation_text, #f_activities_text, #f_food_text {
+    visibility: hidden;
+    overflow-y: scroll;
+    padding-right: 4rem;
+    width: 31vw;
+}
+
+
+#praia {
+    background-image: url("./where/praia-da-rocha-beach-summer.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#p_cont {
+    padding: 2.5rem 0rem 2.5rem 4rem;    
+    height: 50dvh;
+}
+
+#p_text {
+    overflow-y: scroll;
+    width: 50vw;
+    padding-right: 4rem;
+
+}
+
+#other{
+    background-image: url("./where/Algarve.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boat {
+    border-radius: 0.5rem;
+    max-width: 20vw;
+
+}
+
+#boats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+#boat1 {
+    margin-right: 2rem;
+}
+
+#o_cont{
+    padding: 2.5rem 0rem 2.5rem 4rem;    
+    height: 25vh;
+}
+
+#o_text {
+    padding-right: 4rem;
+    overflow-y: scroll;
+    width: 45vw;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#par {
+    width: 40vw;
+}
+
+@media only screen and (max-width: 500px)  { 
+    .where_page h2 {
+        font-size: 2.5rem;
+    }
+    .f_container {
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 100vw;
+    }
+    .text_box{
+        height: 25dvh;
+        padding: 1.5rem 0rem 1rem 2rem;
+    }
+    #left {
+        padding-right: 0rem;
+        margin-right: 0rem;
+        width: 70%;
+        height: 40%;
+    }
+    #left_text {
+        padding-right: 2rem;
+        scrollbar-face-color: #fff;
+    }
+    
+    #couple {
+        max-width: 35vw;
+    }
+
+    #right_box {
+        width: 80%;
+        padding-right: 0rem;
+        height: 50dvh;
+    
+    }
+    
+    #f_accommodation, #f_activities, #f_food {
+        width: 90%;
+        padding-right: 0;
+        overflow-x: hidden;
+    }
+
+    #f_accommodation_text, #f_activities_text, #f_food_text {
+        width: 90%;
+    }
+
+    #right_box h3 {
+        font-size: 1rem;
+        text-align: left;
+    }
+    #accommodation_close, #activities_close, #food_close {
+        padding-right: 0.5rem;
+    }
+
+    .boat {
+        max-width: 50vw;
+    
+    }
+    
+    #boats {
+        flex-direction: column;
+    }
+
+    #boat1 {
+        margin-bottom: 1rem;
+        width: 50vw;
+    }
+    
+    #p_cont {
+        padding: 1.5rem 0rem 1.5rem 2rem;    
+        height: 50dvh;
+    }
+
+    #p_text {
+        padding-right: 2rem;
+    
+    }
+    #o_cont{
+        padding: 1.5rem 0rem 1.5rem 2rem;
+        height: 50dvh;
+    }
+    
+    #o_text {
+        padding-right: 2rem;
+        width: 50vw;
+    }
+}

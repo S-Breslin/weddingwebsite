@@ -135,7 +135,7 @@ a {
 
 
 .where_stay {
-    height:200dvh;
+    height: 400dvh;
     width:100vw;
 }
 
@@ -146,7 +146,7 @@ a {
 
 .things_do {
     height: 100dvh;
-    margin-top: 300dvh;
+    margin-top: 200dvh;
     background-color: #A8B0A3;
     display: flex;
     flex-direction: column;

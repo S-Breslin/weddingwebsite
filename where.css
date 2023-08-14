@@ -15,7 +15,7 @@ a{
 
 
 #where_container {
-    height: 200dvh;
+    height: 200svh;
     width: 100vw;
 }
 
@@ -191,7 +191,7 @@ a{
 }
 
 .f_container {
-    height: 80dvh;
+    height: 80svh;
     width: 90vw;
     display: flex;
     justify-content: center;
@@ -200,8 +200,8 @@ a{
 
 .text_box {
     background-color:  rgba(62, 61, 56, 0.75);
-    margin-top: 2dvh;
-    height: 60dvh;
+    margin-top: 2svh;
+    height: 60svh;
     border-radius: 1rem;
     padding: 2.5rem 0rem 2.5rem 4rem;
     display: flex;
@@ -235,7 +235,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 60dvh;
+    height: 60svh;
 }
 
 #right_box h3{
@@ -267,7 +267,7 @@ a{
 #f_accommodation, #f_activities, #f_food {
     overflow-y: hidden;  
     width: 35vw;
-    height: 5dvh;
+    height: 5svh;
     padding-right: 1rem;
 }
 #f_accommodation:hover, #f_activities:hover, #f_food:hover {
@@ -295,7 +295,7 @@ a{
 
 #p_cont {
     padding: 2.5rem 0rem 2.5rem 4rem;    
-    height: 50dvh;
+    height: 50svh;
 }
 
 #p_text {
@@ -355,7 +355,7 @@ a{
         width: 100vw;
     }
     .text_box{
-        height: 25dvh;
+        height: 25svh;
         padding: 1.5rem 0rem 1rem 2rem;
     }
     #left {
@@ -376,7 +376,7 @@ a{
     #right_box {
         width: 80%;
         padding-right: 0rem;
-        height: 50dvh;
+        height: 50svh;
     
     }
     
@@ -414,7 +414,7 @@ a{
     
     #p_cont {
         padding: 1.5rem 0rem 1.5rem 2rem;    
-        height: 50dvh;
+        height: 50svh;
     }
 
     #p_text {
@@ -423,7 +423,7 @@ a{
     }
     #o_cont{
         padding: 1.5rem 0rem 1.5rem 2rem;
-        height: 50dvh;
+        height: 50svh;
     }
     
     #o_text {

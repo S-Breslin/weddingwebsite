@@ -14,7 +14,7 @@ a {
 
 .banner {
     max-height: 400px;
-    height: 40dvh;
+    height: 40svh;
     background-image: url(./images/ferragudo_banner.jpg);
     background-size:cover;
     background-position: top;
@@ -23,7 +23,7 @@ a {
 }
 
 .container {
-    height: 45dvh;
+    height: 45svh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -87,7 +87,7 @@ a {
 }
 
 .get_there {
-    height: 100dvh;
+    height: 100svh;
     background-color: #697261;
     background-image: url(./images/packbags.jpg);
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ a {
 
 
 .where_stay {
-    height: 400dvh;
+    height: 400svh;
     width:100vw;
 }
 
@@ -145,8 +145,8 @@ a {
 }
 
 .things_do {
-    height: 100dvh;
-    margin-top: 200dvh;
+    height: 100svh;
+    margin-top: 200svh;
     background-color: #A8B0A3;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ a {
 }
 .things_container {
     width: 80vw;
-    height: 75dvh;
+    height: 75svh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -242,15 +242,15 @@ a {
     }
     .things_container {
         width: 100vw;
-        height: 90dvh;
+        height: 90svh;
         background-color: #A8B0A3;
     }
     .things_box {
-        height: 30dvh;
+        height: 30svh;
         width: 47.5%;
     }
     #things_title{
-        height: 10dvh;
+        height: 10svh;
         display: flex;
         align-items: flex-start;
     }

@@ -146,7 +146,7 @@ a {
 
 .things_do {
     height: 100svh;
-    margin-top: 200svh;
+    margin-top: 300svh;
     background-color: #A8B0A3;
     display: flex;
     flex-direction: column;
@@ -246,11 +246,12 @@ a {
         background-color: #A8B0A3;
     }
     .things_box {
-        height: 30svh;
+        height: 28svh;
         width: 47.5%;
     }
     #things_title{
-        height: 10svh;
+        height: 8svh;
+        margin-bottom: 1rem;
         display: flex;
         align-items: flex-start;
     }

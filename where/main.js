@@ -167,7 +167,7 @@ gsap.to ("#test3", {
 })
 */
 
-/*let panels = gsap.utils.toArray(".where_page");
+let panels = gsap.utils.toArray(".where_page");
 
 
 //panels.push(document.getElementById('things'))
@@ -185,10 +185,10 @@ panels.forEach((panel, i) => {
             snapTo: 1,
             duration: 1,
             ease: "sine"
-        }
+        }*/
     });    
 });
-*/
+
 /*
 
 var tl  = gsap.timeline ();

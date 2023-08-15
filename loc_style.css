@@ -251,7 +251,7 @@ a {
     }
     #things_title{
         height: 8svh;
-        margin-bottom: 1rem;
+        padding-bottom: 1rem;
         display: flex;
         align-items: flex-start;
     }

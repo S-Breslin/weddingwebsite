@@ -287,7 +287,7 @@ a{
 
 
 #praia {
-    background-image: url("./where/praia-da-rocha-beach-summer.jpg");
+    background-image: url("./images/praia-da-rocha.jpg");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@ a{
 }
 
 #other{
-    background-image: url("./where/Algarve.jpg");
+    background-image: url("./where/albuferia1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

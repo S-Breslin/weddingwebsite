@@ -5,8 +5,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
   let thanks = document.getElementById('thanks');
 
   const success = () => {
-    background.style.backgroundImage = 'url("./images/Success.jpeg")';
-    background.style.backgroundSize = 'cover';
+    background.style.backgroundImage = 'url("./images/Success-1.jpg")';
+    background.style.backgroundSize = 'contain';
     formContent.style.display = 'none';
     form.style.display = 'none';    
     thanks.style.display = 'flex';

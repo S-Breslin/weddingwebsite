@@ -24,16 +24,13 @@ html, body {
     width: 100%;
     display: none;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     color: white;
     font-size: 3rem;    
     font-family: 'Dancing Script', cursive;
 }
 
-#thank-you {
-    margin-top: 5rem;
-}
 
 #rsvp_content {    
     background-color: rgba(133, 148, 141, 0.65);

@@ -10,7 +10,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
     formContent.style.display = 'none';
     form.style.display = 'none';    
     thanks.style.display = 'flex';
-    console.log("Success")
+    console.log("Success");
+    gsap.from("#thank-you", {text: "Thank you!", ease:"bounce", delay: 2, duration: 2.5});
   };
 
 

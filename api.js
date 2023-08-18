@@ -3,6 +3,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
   let background = document.getElementById('rsvp');
   let formContent = document.getElementById('rsvp_content');
   let thanks = document.getElementById('thanks');
+  let tl = gsap.timeline();
 
   const success = () => {
     background.style.backgroundImage = 'url("./images/Success-1.jpg")';
@@ -11,7 +12,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
     form.style.display = 'none';    
     thanks.style.display = 'flex';
     console.log("Success");
-    gsap.from("#thank-you", {text: "Thank you!", ease:"bounce", delay: 2, duration: 2.5});
+    tl.from("#thank-you", {opacity: 0, ease:"none", duration: 2.5})
+        .from("#thank-you", {text: "Thank you!", ease:"bounce", delay: 2, duration: 2.5});
   };
 
 

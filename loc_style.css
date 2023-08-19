@@ -28,6 +28,8 @@ a {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background: rgb(133,148,141);
+    background: linear-gradient(135deg, rgba(133,148,141,1) 0%, rgba(105,114,97,1) 100%); 
 }
 
 .getting {
@@ -284,6 +286,8 @@ a {
     .get_text {
         width: 70%;
         height: 20%;
+        overflow-y: scroll;
+        text-align: justify;
     }
 
 }

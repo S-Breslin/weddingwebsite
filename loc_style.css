@@ -288,6 +288,7 @@ a {
         height: 20%;
         overflow-y: scroll;
         text-align: justify;
+        padding-top: 0;
     }
 
 }

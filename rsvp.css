@@ -42,12 +42,13 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .rsvp h1 {
     margin-top: 7.5%;
+    padding-bottom: 5rem;
     color: white;
     font-size: 3rem;    
     font-family: 'Dancing Script', cursive;

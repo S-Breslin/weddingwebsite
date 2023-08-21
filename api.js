@@ -9,19 +9,15 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
   
 
   const success = () => {
-    //viewport.setAttribute('content', 'maximum-scale=1.0');
     background.style.backgroundImage = 'url("./images/Success-1.jpg")';
-    //if()
-    background.style.backgroundSize = 'contain';
-    document.body.style.zoom = 'reset';
+    background.style.backgroundSize = 'cover';
+    background.style.transform = 'scale(0.8)';
     formContent.style.display = 'none';
     form.style.display = 'none';    
     thanks.style.display = 'flex';
     console.log("Success");
     tl.from("#thank-you", {opacity: 0, ease:"none", duration: 2.5})
         .from("#thank-you", {text: "Thank you!", ease:"bounce", delay: 2, duration: 2.5});
-    
-    //viewport.setAttribute('content', 'maximum-scale=10.0');
   };
 
 

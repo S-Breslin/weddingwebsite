@@ -6,11 +6,14 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
   let formContent = document.getElementById('rsvp_content');
   let thanks = document.getElementById('thanks');
   let tl = gsap.timeline();
+  
 
   const success = () => {
-    viewport.setAttribute('content', 'initial-scale 1.0, maximum-scale=1.0');
+    //viewport.setAttribute('content', 'maximum-scale=1.0');
     background.style.backgroundImage = 'url("./images/Success-1.jpg")';
+    //if()
     background.style.backgroundSize = 'contain';
+    document.body.style.zoom = 'reset';
     formContent.style.display = 'none';
     form.style.display = 'none';    
     thanks.style.display = 'flex';

@@ -8,7 +8,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
   let tl = gsap.timeline();
 
   const success = () => {
-    //viewport.setAttribute('content', 'maximum-scale=1.0');
+    viewport.setAttribute('content', 'initial-scale 1.0, maximum-scale=1.0');
     background.style.backgroundImage = 'url("./images/Success-1.jpg")';
     background.style.backgroundSize = 'contain';
     formContent.style.display = 'none';

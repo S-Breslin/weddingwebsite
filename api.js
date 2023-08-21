@@ -10,8 +10,16 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPi-1b1-ohrTAOqg10uk
 
   const success = () => {
     background.style.backgroundImage = 'url("./images/Success-1.jpg")';
-    background.style.backgroundSize = 'cover';
-    background.style.transform = 'scale(0.8)';
+
+    if(window.innerWidth > '500') {
+        background.style.backgroundSize = 'contain';
+        console.log('large screen');
+
+    } else {
+        background.style.backgroundSize = 'cover';
+        background.style.transform = 'scale(0.8)';        
+    }
+
     formContent.style.display = 'none';
     form.style.display = 'none';    
     thanks.style.display = 'flex';

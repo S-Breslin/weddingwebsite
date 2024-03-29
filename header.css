@@ -3,9 +3,13 @@ header {
     width: 100vw;
     background-color: #85948D;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;    
     border-bottom: 3px solid white;
+}
+a {
+    text-decoration: none;
+    color:  white;
 }
 
 .logo{
@@ -15,7 +19,6 @@ header {
     height: 25dvh;
     margin-top: 15dvh;
     margin-bottom: 20px;
-    position: absolute;
     z-index: 10;
 }
 #mid_nav {
@@ -109,9 +112,7 @@ li:hover {
     width: 80%;
 }
 
-ul, li {
-    margin-left: -20px;
-}
+
 @media only screen and (max-width: 1200px)  { 
     
     nav {
@@ -123,8 +124,13 @@ ul, li {
 }
 
 @media only screen and (max-width: 500px)  { 
+    header {
+        justify-content: center;
+    }
+    
     .logo {
         height: 15vh;
+        position: absolute;
     }
     
     body {        

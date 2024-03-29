@@ -8,10 +8,6 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
-a {
-    text-decoration: none;
-    color:  white;
-}
 
 .banner {
     max-height: 795px;
@@ -94,8 +90,23 @@ a {
     font-size: 2em;
 }
  .count2 p {
-    margin-top: -50%;
  }
+
+ .test {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #day, #hour, #minute, #second {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
 
 .container {
     height: 45%;
@@ -105,8 +116,6 @@ a {
     flex-wrap: wrap;
     background-color: rgba(133, 148, 141, 0.75);
     }
-
-
 
 .location {
     background-image: url(./images/ferragudo.jpg);
@@ -163,54 +172,3 @@ a {
     opacity: 80%;
 }
 
-h2 {
-    opacity: 100%;
-}
-
-.rsvp {
-    height: 100vh;
-    background: rgb(105,114,97);
-    background: linear-gradient(0deg, rgba(105,114,97,1) 0%, rgba(168,176,163,1) 68%); 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.rsvp h1 {
-    color: white;
-    font-size: 3rem;    
-    font-family: 'Roboto Serif', serif;
-}
-
-.rsvp_form {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: url(./images/Lady_of_the_Rock.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;    
-    margin-bottom: 2.5%;
-    border-radius: 1rem;
-}
-
-.rsvp_form_content {
-    height: 45%;
-    width: 25%;
-    background-color: rgba(133, 148, 141, 0.75);
-    border: 3px white solid;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 2.5%;
-
-}
-
-legend, label {
-    color: white;
-}

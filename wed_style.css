@@ -107,17 +107,23 @@ ul, li {
     }
 }
 
-@media only screen and (max-width: 400px)  { 
+@media only screen and (max-width: 500px)  { 
     .content {
-        height: 80vh;
+        height: 65dvh;
         align-items: center;
         padding-top: 20vh;
     }
     .text {
-        height: 30vh;
+        height: 30dvh;
+        max-width: 60%;
+        padding: 2rem 2rem 2rem 2rem;
+
     }
     .logo {
         height: 15vh;
+    }
+    body {
+        overflow: hidden;
     }
 }
 

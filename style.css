@@ -8,36 +8,48 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#type {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    padding-top: 10dvh;
+}
+label {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
 .container{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr;
+   display: flex;
+   justify-content: center;
+
 }
 
 .background {
-    display: flex;
-    flex-direction: column;   
     border-radius: 2.5%;
-    height: 90vh;
-    width: 100%;
-    margin-top: 5vh;
-    min-width: 800px;
+    height: 90dvh;
+    width: 30vw;
+    margin-top: 5dvh;
 }
 
 #blur {    
-    grid-column: 2;
-    grid-row: 1;
+    display: flex;
+    flex-direction: column; 
     background-image: url(./images/The_Happy_Couple_Blur.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    z-index: 5;
 }
 
-#clear {    
-    grid-column: 2;
-    grid-row: 1;
+#clear { 
+    z-index: 1;
     background-image: url(./images/The_Happy_Couple.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content{

@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./loc_style.css" />
+    <link rel="stylesheet" href="./where.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="icon" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=PT+Mono&family=Raleway:wght@400;500;600&family=Roboto+Serif:ital,wght@0,200;1,200&family=Rowdies&display=swap"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Changa+One&family=Fugaz+One&family=Jacques+Francois+Shadow&family=Lemon&family=Monoton&family=Moul&family=Orelega+One&family=Rampart+One&family=Roboto+Serif:wght@300;400&family=Zen+Tokyo+Zoo&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
@@ -23,12 +25,11 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.png" alt="Logo" class="logo" />
       <nav>
         <ul class="nav1">
-          <li>Home</li>
+          <li><a href="./home.html">Home</a></li>
           <li><a href="./location.html">Location</a></li>
-          <li><a href="#rsvp">R.S.V.P</a></li>
+          <li><a href="./rsvp.html">R.S.V.P</a></li>
         </ul>
       </nav>
       <div id="mid_nav">
@@ -36,7 +37,7 @@
           menu
           </span>
       </div>
-
+      <img src="./images/logo.png" alt="Logo" class="logo" />
       <nav>
         <ul class="nav2">
           <li><a href="./wedding_day.html">The Wedding Day</a></li>
@@ -50,7 +51,7 @@
         <ul id="menu_links">
           <a href="./home.html">Home</a>
           <a href="./location.html">Locations</a>
-          <a href="#RSVP">RSVP</a>
+          <a href="./rsvp.html">RSVP</a>
           <a href="./wedding_day.html">The Wedding Day</a>
           <a href="./daytwo.html">Day Two</a>
           <a href="./faq.html">FAQ</a>
@@ -73,7 +74,7 @@
                 <h2>Getting There</h2>
               </div>
           </a>
-          <a href="./where/whereToStay.html" class="where" id="tile">
+          <a href="#where_container" class="where" id="tile">
             <div class="band">
               <h2>Where To Stay</h2>
             </div>
@@ -94,21 +95,276 @@
                 
                     <div class="get_text" id="by_plane">
                         <h2>By Plane</h2>
-                        <p>Fly to Faro airpot, where a transfer is needed to get you to your area of choice.</p>
+                        <p>Fly to Faro airport, where a transfer is needed to get you to your area of choice.</p>
                     </div>
                     <div class="get_text" id="transfers">
                         <h2>Airport Transfers</h2>
-                        <p>Transfer Companies:</p>
-                        <a href="https://www.faroairporttransfersto.com/ferragudo">Faro Airport Transfers To...</a>
-                        </n>
-                        <a href="https://www.faro-airport-taxis.com/lagoa/ferragudo">Faro Airport Taxis</a>
+                        <p>Many transfer companies operate services from Faro airport to wherever you’re staying in the algarve. If you are staying in Ferragudo you should expect to pay around €70 each way. If you would like a contact number for a trusted transfer company, please contact the bride or groom.</p>
                     </div>
                 
             </div>
     </section>
-    <section class="where_stay" id="where">        
-        
+    <section id="where_container">
+      <div class="where_title">
+        <div class="half_page" id="title">
+          <div class="title_text">
+            <h2>Where</h2>
+            <div class="title_text_bottom">
+              <h2>To</h2>
+              <h2>Stay</h2>
+            </div>
+          </div>
+        </div>
+        <div class="half_page" id="links">
+          <div class="top">
+            <a class="link" href="#ferragudo">
+              <h3>Ferragudo</h3>
+            </a>
+          </div>
+          <div class="bottom">
+            <div id="b1">
+              <a class="link" href="#praia">
+                <h3>Praia Da Rocha</h3>
+              </a>
+            </div>
+            <div id="b2">
+              <a class="link" href="#other">
+                <h3>Albufeira</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="where_page" id="ferragudo">
+        <h2>Ferragudo</h2>
+        <div class="f_container">
+          <div class="text_box" id="left">
+            <div id="left_text">
+              <p>
+                The wedding party and close family and friends will be staying in
+                Ferragudo. <br /><br />This is the area where Sean’s father has
+                had an apartment for many years and an area dearly loved by the
+                couple. <br /><br />In fact, it is where the couple got engaged.
+              </p>
+              <img src="./where/couple.jpg" alt="" id="couple" />
+              <p>We would invite any guests who wished, to stay here with us.</p>
+            </div>
+          </div>
+          <div id="right_box">            
+              <div class="text_box"  id="f_accommodation">
+                <div class="tbox_top">
+                  <h3 id="accommodation_open">Accommodation</h3>
+                  <span id="accommodation_close" class="material-symbols-outlined">
+                    close
+                    </span>
+                </div>
+                <div id="f_accommodation_text">
+                  <hr>
+                    <p>
+                        Ferragudo is a small fishing village.
+                        <br /><br />
+                        It is a well-kept secret and is very beautiful.
+                        <br /><br />
+                        Accommodation here is not abundant. Therefore we recommend booking as early as possible. However, that being said there are some accommodations that do not release bookings for 2024 until 2024.
+                        <br /><br />
+                        For apartments, we recommend Vitor’s Village, Vila Castelo Parque. Both hotels are around an 8 minute walk to the main square. (Please bare in mind that accommodation for Vila Costelo Parque does not go live on their website until late December/ early January)
+                        <br /><br />
+                        Suites @ Portarade is located in the square.
+                        <br /><br />
+                        There are only two hotels in Ferragudo. Both are a 20 minute walk from the square. Walking to the square from these hotels is all downhill but unfortunately walking back is uphill. It feels like a long walk when you are walking uphill in the heat. This is something to bare in mind if you wish to book either hotel. A taxi to or from the square would be about 5 minutes. However, also bare in mind that your hotel will order you a taxi down to the square but there are not many taxis in Ferragudo to bring you back.
+                
+                            <ul>
+                                <li>Hotel Casabela – This is a classic hotel with beautiful views and its own access to the beach</li>
+                                <li>Hotel Rural Brícia Du Mar – also nice but no views.</li>
+                            </ul>
+                
+                        If you are looking at any accomodation on a map and want to know how close it is to the square, use ‘Restaurante Portarade’ as a reference.
+                        <br /><br />
+                        There are also a wide variety of accommodations on Airbnb that will host from 2 guests to much bigger parties. Again, if you wish to know how close the Airbnb is to the square, use ‘Restaurante Portarade’ as a reference.
+                    </p>
+                </div>
+
+            </div>                   
+            
+            <div class="text_box" id="f_activities">
+                <div class="tbox_top">
+                  <h3 id="activities_open">Things to do in Ferragudo </h3>
+                  <span id="activities_close" class="material-symbols-outlined">
+                    close
+                    </span>
+                </div>
+                <div id="f_activities_text" >
+                  <hr>
+                
+                    <h4>Beaches</h4>        
+                    <p>If you go to a beach in Ferragudo, look out for a man selling ‘Bolinhas’. These are donuts and are a classic beach tradition in Portugal. For 2 euro you can get a sugar donut or if you’re brave enough you can try the Portuguese classic donut with traditional filling.</p>
+                    <br /><br />
+                
+                    <Strong>Praia Grande</Strong>
+                    <br /><br />
+                    <u>Pros</u>                
+                    <ul>
+                        <li>The biggest beach in Ferragudo</li>                
+                        <li>Has sunbeds to rent</li>                
+                        <li>Has three beach bars</li>                
+                        <li>Has water activities like Kayaking and Paddle Boarding and an inflatable water course</li>
+                        <li>Massages available</li>                
+                        <li>Access to a nice cliff walk is at the end of the beach</li>
+                    </ul>
+                
+                    <u>Cons</u>                
+                        <ul>
+                            <li>Big hill to get to it and a lot of steps down, which means you must climb back up the steps to leave the beach.</li>
+                        </ul>                
+                    <br /><br />             
+                
+                    <strong>Praia da Angrinha  </strong>
+            
+                    <br /><br />
+                
+                    <u>Pros</u>
+                
+                        <ul>
+                            <li>This beach is closer to the village square</li>
+                            <li>There are no hills or steps to get to this beach</li>
+                            <li>This beach has the least shells and is the nicest to walk on</li>
+                        </ul>
+                
+                    <u>Cons</u>
+                
+                        <ul>
+                            <li>No sunbeds to rent and no beach bars </li>
+                        </ul>
+                
+                
+                    <br />
+                
+                
+                
+                    <h4>Live Music</h4>
+                
+                        <p>
+                            The couple recommends you go to ‘Escondidinho’ for live music. This beach bar is located on Praia Grande (so remember there are steps). It is a very relaxed vibe. Live music is played from 5-8pm on Tuesdays, Thursdays and Sundays.
+                            Club Nau is also located on Praia Grande. It has live music every day in July (some better than others). The cocktails here are delicious but pricy for Portugal. We do NOT recommend getting the food here as it is also quite pricy and not the best.
+                            V5 is a small bar located just off the square. It has live music on Saturdays.
+                        </p>
+                
+                    <br />
+                
+                
+                    <h4>Shopping </h4>
+            
+                
+                        <p>
+                            Ferragudo has its own mini supermarket that has most of what you could need. The butcher does fabulous skewers for anyone who has opted for self-catering.
+                            There is also a Lidl in Ferragudo about a 25 minute walk or a five minute drive from the square. This is handy for stocking up on water as we do not recommend drinking the tap water anywhere in Portugal.
+                            Down either side of the square there are a few little souvenir shops.
+                            <br /><br />
+                            If you want to do more shopping than the few shops in Ferragudo, we recommend you that go to Praia Da Roche. It is a short boat taxi across the bay (we recommend you do this as it is a nice thing to do anyway). The boat taxi return costs 8 euro per person.
+                        </p>
+                
+                    <br />
+                
+                
+                    <h4>Water Sports </h4>
+                
+                        <p>On Praia Grande you can rent Kayaks and Paddle Boards. There is also an inflatable water course there too.</p>
+                
+                </div>
+                <span id="expand" class="material-symbols-outlined">
+                  expand_more
+                  </span>
+            </div>
+            
+            
+            <div class="text_box"  id="f_food">
+                <div class="tbox_top">
+                  <h3 id="food_open">Places to eat in Ferragudo </h3>
+                  <span id="food_close" class="material-symbols-outlined">
+                    close
+                    </span>
+                </div>
+                <div id="f_food_text">
+                    <hr>
+                    
+                    <p>The couple’s favourite spot to eat is O' Velho Novo. The food is delicious and the price is very reasonable. Family and close friends are invited to join the couple the night before the wedding. We plan to have dinner there. If you are interested in joining, please let Laura or Seán know.  </p>
+                    
+                    
+                    <p>The couple love brunch from Brunch in Rio. The food is fab and the interior is both cool in design and temperature.</p>
+                    
+                    
+                    
+                    <p>Another nice brunch spot is Amigos. This is like a tapas style meal. </p>
+                    
+                    
+                    <p>For Pizza, the couple always return to Pizzeria Delizia. They never fail. Their pasta is also very nice.  </p>
+                    
+                    <p>If you like Indian, we implore you to try Sikander. It is located in the square and it is absolutely delicious. It has all the normal dishes but its chefs specials menu is also magic. We recommend number 4 with lamb and number 7 with either chicken or lamb.</p>
+                    
+                    <p>For lunch, you cannot beat the value for money in Port Arade and the food is always good. They are also a good option for dinner.</p>
+                    
+                    <p>Portugal is famous for their fish. Aria is the couple’s favourite Fish restaurant. A waiter will bring out the catch of the day and you can have your pick. They bring the fish out for you and debone it in front of you. A great experience.</p>
+                    
+                    <p>If you are looking for something a little more up market, Sueste is for you. Probably the most expensive restaurant in Ferragudo but the fish is amazing.</p>
+                    
+                    <strong><u>What to avoid? </u> </strong>
+                    
+                    <p>The couple do not rate Terre Cotta. This is an Italian. Although their pasta is freshly made, their menu is limited and Seán described his sauce as bland.  </p>
+                    
+                    <p>Club Nau has lovely cocktails but it is expensive. We do not recommend getting the food there as it is pricy and not great.  </p>
+                
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="where_page" id="praia">
+        <h2>Praia da Rocha</h2>
+        <div class="text_box" id="p_cont">
+          <div id="p_text">
+            <p> Located across the bay, Praia da Roch is a more touristy area with plenty of hotels, bars and restaurants. You can enjoy a quick boat taxi from Praia da Roche to Ferragudo. A regular taxi would be around 12 minutes and taxi prices are very reasonable.<br /><br />
+              <div id="boats">
+                <img src="./where/boat1.jpg" alt="" class="boat" id="boat1">
+                <img src="./where/boat2.jpg" alt="" class="boat
+                ">
+              </div>
+              This would be a good location for people who want to stay close, but not too close to the wedding party. There are accommodation of all types and prices here, so there is something to suit everyone while still being close to everything going on. <br /><br />
+              <h3>Recommended hotels:</h3> 
+              <br />
+              <strong>Hotel Casino Algarve.</strong> If you book directly with them and use the code <em>'WED0724'</em> you will get 5% off. 
+              <br /><br />
+              <strong>Hotel Da Roche</strong>
+              <br /><br />
+              <strong>Oriental Hotel</strong> 
+              <br /><br />
+              <strong>Jupiter Hotel Algarve</strong> (enter code JUPITER for 5% off) - only fault with this hotel is that the pool is in shade from 4pm. 
+              We are very grateful to everyone who is willing to travel to
+              Portugal for our wedding and understand that not everyone will
+              want to stay where the wedding party are staying.<br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="where_page" id="other">
+        <h2>Albufeira</h2>
+          <div class="text_box" id="o_cont">
+            <div id="o_text">
+              <p>
+                We are very grateful to everyone who is willing to travel to
+                Portugal for our wedding and understand that not everyone will
+                want to stay where the wedding party are staying.<br /><br />
+                Albufeira is a great alternative . <br /><br />
+                The reception will be held outside Albufeira and therefore a good
+                location for people who will be attending the main event only.
+                <br /><br />This is also a location with an abundance of
+                accommodation for our guests.
+              </p>
+              </div>
+          </div>
+      </div>
     </section>
+
+
     <section class="things_do" id="things">
       <div id="things_title">
         <h1 class="sect_title">Things To Do</h1>
@@ -150,7 +406,7 @@
           <div class="band2" id="back_golf">
             <h2>Golf</h2>
             <div id="golf_text" class="things_text">
-              <p>Play golf at Pestana Resort. The wedding party will be playing a round of golf the day before the wedding. All guests are welcome to play. Please let us know if you are interested and we will add you to the booking. </p>
+              <p>Play golf at Pestana Resort. The wedding party will be playing a round of golf the Wednesday before the wedding. All guests are welcome to play. Please let us know if you are interested and we will add you to the booking. </p>
             </div>
           </div>
         </div>
@@ -164,9 +420,11 @@
         </div>
       </div>
     </section>
+
+    
     <script src="./main.js"></script>
     <script src="./loc.js"></script>
-    <script src="./gsapLoc.js"></script>
     <script src="./header.js"></script>
+    <script src="./where/main.js"></script>
   </body>
 </html>
